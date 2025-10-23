@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Productivity Tracker</title>
+  <link rel="stylesheet" href="sources/style.css" />
+</head>
+<body>
+  
+   <!-- 🌙☀️ Minimal dark mode icon toggle -->
+    <button id="darkModeToggle" aria-label="Toggle dark mode">
+      <span class="icon">🌙</span>
+    </button>
+  
+  <header>
+    <!-- 🧡 Replace with your real logo URLs -->
+    <img src="sources/lightmodeZeo.png" class="logo-light" alt="Company Logo Light" />
+    <img src="sources/darkmodeZeo.png" class="logo-dark" alt="Company Logo Dark" />
+    
+    <!-- Update Name per Department -->
+    <h1>Non Standard Department Pacing Tracker</h1> 
+  </header>
+
+  <main>
+    <div id="tracker"></div>
+    <p id="total-count">Total: 0 min (0 hr 0 min)</p>
+
+    <div class="progress-section">
+      <p>Shift hours:</p>
+      <input type="number" id="shift-hours" min="1" placeholder="e.g. 8" />
+      <div class="progress-bar-container">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      <p class="progress-text" id="progress-display">Enter shift hours to see progress</p>
+    </div>
+
+    <div class="bottom-buttons">
+      <button id="reset" class="main">Reset All</button>
+      <button id="submit" class="main">Submit to Google Form</button>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
